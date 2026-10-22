@@ -1,0 +1,27 @@
+# Configurações locais e chaves
+config_pastas.json
+.env
+
+# Ambientes virtuais (Python)
+.venv/
+venv/
+env/
+
+# Caches e arquivos compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Pastas de compilação (PyInstaller)
+build/
+dist/
+*.spec
+
+# Configurações de IDEs (VS Code / PyCharm)
+.vscode/
+.idea/
+
+# Arquivos temporários do Sistema Operacional
+Thumbs.db
+.DS_Store

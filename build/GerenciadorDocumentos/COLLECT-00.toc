@@ -20,6 +20,542 @@
   ('PIL\\_webp.cp314-win_amd64.pyd',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\PIL\\_webp.cp314-win_amd64.pyd',
    'EXTENSION'),
+  ('Tesseract-OCR\\ambiguous_words.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\ambiguous_words.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\ambiguous_words.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\ambiguous_words.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\classifier_tester.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\classifier_tester.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\classifier_tester.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\classifier_tester.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\cntraining.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\cntraining.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\cntraining.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\cntraining.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\combine_lang_model.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\combine_lang_model.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\combine_lang_model.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\combine_lang_model.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\combine_tessdata.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\combine_tessdata.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\combine_tessdata.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\combine_tessdata.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\dawg2wordlist.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\dawg2wordlist.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\dawg2wordlist.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\dawg2wordlist.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\doc\\AUTHORS',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\doc\\AUTHORS',
+   'DATA'),
+  ('Tesseract-OCR\\doc\\LICENSE',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\doc\\LICENSE',
+   'DATA'),
+  ('Tesseract-OCR\\doc\\README.md',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\doc\\README.md',
+   'DATA'),
+  ('Tesseract-OCR\\libLerc.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libLerc.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libarchive-13.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libarchive-13.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libb2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libb2-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libbrotlicommon.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbrotlicommon.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libbrotlidec.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbrotlidec.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libbz2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbz2-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libcairo-2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libcairo-2.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libcurl-4.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libcurl-4.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libdatrie-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libdatrie-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libdeflate.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libdeflate.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libexpat-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libexpat-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libffi-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libffi-8.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libfontconfig-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfontconfig-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libfreetype-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfreetype-6.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libfribidi-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfribidi-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgcc_s_seh-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgcc_s_seh-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgif-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgif-7.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgio-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgio-2.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libglib-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libglib-2.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgmodule-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgmodule-2.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgobject-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgobject-2.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libgraphite2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgraphite2.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libharfbuzz-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libharfbuzz-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libiconv-2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libiconv-2.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libicudt78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicudt78.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libicuin78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicuin78.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libicuuc78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicuuc78.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libidn2-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libidn2-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libintl-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libintl-8.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libjbig-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libjbig-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libjpeg-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libjpeg-8.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libleptonica-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libleptonica-6.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\liblz4.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblz4.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\liblzma-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblzma-5.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libopenjp2-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libopenjp2-7.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpango-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpango-1.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpangocairo-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangocairo-1.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpangoft2-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangoft2-1.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpangowin32-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangowin32-1.0-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpcre2-8-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpcre2-8-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpixman-1-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpixman-1-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpng16-16.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpng16-16.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libpsl-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpsl-5.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libsharpyuv-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libsharpyuv-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libssh2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libssh2-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libstdc++-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libstdc++-6.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libtesseract-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtesseract-5.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libthai-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libthai-0.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libtiff-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtiff-6.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libunistring-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libunistring-5.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libwebp-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwebp-7.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libwebpmux-3.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwebpmux-3.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libwinpthread-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwinpthread-1.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\libzstd.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libzstd.dll',
+   'BINARY'),
+  ('Tesseract-OCR\\lstmeval.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\lstmeval.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\lstmeval.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\lstmeval.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\lstmtraining.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\lstmtraining.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\lstmtraining.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\lstmtraining.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\merge_unicharsets.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\merge_unicharsets.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\merge_unicharsets.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\merge_unicharsets.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\mftraining.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\mftraining.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\mftraining.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\mftraining.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\set_unicharset_properties.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\set_unicharset_properties.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\set_unicharset_properties.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\set_unicharset_properties.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\shapeclustering.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\shapeclustering.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\shapeclustering.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\shapeclustering.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\tessdata\\ScrollView.jar',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\ScrollView.jar',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\alto',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\alto',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\ambigs.train',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\ambigs.train',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\api_config',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\api_config',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\bigram',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\bigram',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\box.train',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\box.train',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\box.train.stderr',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\box.train.stderr',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\digits',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\digits',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\get.images',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\get.images',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\hocr',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\hocr',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\inter',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\inter',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\kannada',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\kannada',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\linebox',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\linebox',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\logfile',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\logfile',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\lstm.train',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\lstm.train',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\lstmbox',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\lstmbox',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\lstmdebug',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\lstmdebug',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\makebox',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\makebox',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\page',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\page',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\pdf',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\pdf',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\quiet',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\quiet',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\rebox',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\rebox',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\strokewidth',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\strokewidth',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\tsv',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\tsv',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\txt',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\txt',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\unlv',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\unlv',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\configs\\wordstrbox',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\configs\\wordstrbox',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\eng.traineddata',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\eng.traineddata',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\jaxb-api-2.3.1.jar',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\jaxb-api-2.3.1.jar',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\osd.traineddata',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\osd.traineddata',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\pdf.ttf',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\pdf.ttf',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\piccolo2d-core-3.0.1.jar',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\piccolo2d-core-3.0.1.jar',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\piccolo2d-extras-3.0.1.jar',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\piccolo2d-extras-3.0.1.jar',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\por.traineddata',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\por.traineddata',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\batch',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\batch',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\batch.nochop',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\batch.nochop',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\matdemo',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\matdemo',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\msdemo',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\msdemo',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\nobatch',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\nobatch',
+   'DATA'),
+  ('Tesseract-OCR\\tessdata\\tessconfigs\\segdemo',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tessdata\\tessconfigs\\segdemo',
+   'DATA'),
+  ('Tesseract-OCR\\tesseract-uninstall.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tesseract-uninstall.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\tesseract.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tesseract.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\tesseract.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\tesseract.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\text2image.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\text2image.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\text2image.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\text2image.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\unicharambigs.5.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\unicharambigs.5.html',
+   'DATA'),
+  ('Tesseract-OCR\\unicharset.5.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\unicharset.5.html',
+   'DATA'),
+  ('Tesseract-OCR\\unicharset_extractor.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\unicharset_extractor.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\unicharset_extractor.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\unicharset_extractor.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\winpath.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\winpath.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\wordlist2dawg.1.html',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\wordlist2dawg.1.html',
+   'DATA'),
+  ('Tesseract-OCR\\wordlist2dawg.exe',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\wordlist2dawg.exe',
+   'BINARY'),
+  ('Tesseract-OCR\\zlib1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\zlib1.dll',
+   'BINARY'),
   ('VCRUNTIME140.dll',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\VCRUNTIME140.dll',
    'BINARY'),
@@ -126,17 +662,230 @@
   ('cryptography\\hazmat\\bindings\\_rust.pyd',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography\\hazmat\\bindings\\_rust.pyd',
    'EXTENSION'),
+  ('libLerc.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libLerc.dll',
+   'BINARY'),
+  ('libarchive-13.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libarchive-13.dll',
+   'BINARY'),
+  ('libb2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libb2-1.dll',
+   'BINARY'),
+  ('libbrotlicommon.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbrotlicommon.dll',
+   'BINARY'),
+  ('libbrotlidec.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbrotlidec.dll',
+   'BINARY'),
+  ('libbz2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbz2-1.dll',
+   'BINARY'),
+  ('libcairo-2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libcairo-2.dll',
+   'BINARY'),
   ('libcrypto-3.dll',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libcrypto-3.dll',
    'BINARY'),
+  ('libcurl-4.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libcurl-4.dll',
+   'BINARY'),
+  ('libdatrie-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libdatrie-1.dll',
+   'BINARY'),
+  ('libdeflate.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libdeflate.dll',
+   'BINARY'),
+  ('libexpat-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libexpat-1.dll',
+   'BINARY'),
   ('libffi-8.dll',
-   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libffi-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libffi-8.dll',
+   'BINARY'),
+  ('libfontconfig-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfontconfig-1.dll',
+   'BINARY'),
+  ('libfreetype-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfreetype-6.dll',
+   'BINARY'),
+  ('libfribidi-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libfribidi-0.dll',
+   'BINARY'),
+  ('libgcc_s_seh-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgcc_s_seh-1.dll',
+   'BINARY'),
+  ('libgif-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgif-7.dll',
+   'BINARY'),
+  ('libgio-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgio-2.0-0.dll',
+   'BINARY'),
+  ('libglib-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libglib-2.0-0.dll',
+   'BINARY'),
+  ('libgmodule-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgmodule-2.0-0.dll',
+   'BINARY'),
+  ('libgobject-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgobject-2.0-0.dll',
+   'BINARY'),
+  ('libgraphite2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgraphite2.dll',
+   'BINARY'),
+  ('libharfbuzz-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libharfbuzz-0.dll',
+   'BINARY'),
+  ('libiconv-2.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libiconv-2.dll',
+   'BINARY'),
+  ('libicudt78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicudt78.dll',
+   'BINARY'),
+  ('libicuin78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicuin78.dll',
+   'BINARY'),
+  ('libicuuc78.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libicuuc78.dll',
+   'BINARY'),
+  ('libidn2-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libidn2-0.dll',
+   'BINARY'),
+  ('libintl-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libintl-8.dll',
+   'BINARY'),
+  ('libjbig-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libjbig-0.dll',
+   'BINARY'),
+  ('libjpeg-8.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libjpeg-8.dll',
+   'BINARY'),
+  ('libleptonica-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libleptonica-6.dll',
+   'BINARY'),
+  ('liblz4.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblz4.dll',
+   'BINARY'),
+  ('liblzma-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblzma-5.dll',
+   'BINARY'),
+  ('libopenjp2-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libopenjp2-7.dll',
+   'BINARY'),
+  ('libpango-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpango-1.0-0.dll',
+   'BINARY'),
+  ('libpangocairo-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangocairo-1.0-0.dll',
+   'BINARY'),
+  ('libpangoft2-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangoft2-1.0-0.dll',
+   'BINARY'),
+  ('libpangowin32-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangowin32-1.0-0.dll',
+   'BINARY'),
+  ('libpcre2-8-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpcre2-8-0.dll',
+   'BINARY'),
+  ('libpixman-1-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpixman-1-0.dll',
+   'BINARY'),
+  ('libpng16-16.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpng16-16.dll',
+   'BINARY'),
+  ('libpsl-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpsl-5.dll',
+   'BINARY'),
+  ('libsharpyuv-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libsharpyuv-0.dll',
+   'BINARY'),
+  ('libssh2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libssh2-1.dll',
    'BINARY'),
   ('libssl-3.dll',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libssl-3.dll',
    'BINARY'),
+  ('libstdc++-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libstdc++-6.dll',
+   'BINARY'),
+  ('libtesseract-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtesseract-5.dll',
+   'BINARY'),
+  ('libthai-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libthai-0.dll',
+   'BINARY'),
+  ('libtiff-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtiff-6.dll',
+   'BINARY'),
   ('libtommath.dll',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\libtommath.dll',
+   'BINARY'),
+  ('libunistring-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libunistring-5.dll',
+   'BINARY'),
+  ('libwebp-7.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwebp-7.dll',
+   'BINARY'),
+  ('libwebpmux-3.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwebpmux-3.dll',
+   'BINARY'),
+  ('libwinpthread-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwinpthread-1.dll',
+   'BINARY'),
+  ('libzstd.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libzstd.dll',
    'BINARY'),
   ('pydantic-2.13.5.dist-info\\INSTALLER',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\INSTALLER',
@@ -206,5 +955,6 @@
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets\\speedups.cp314-win_amd64.pyd',
    'EXTENSION'),
   ('zlib1.dll',
-   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\DLLs\\zlib1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\zlib1.dll',
    'BINARY')],)

@@ -6,13 +6,29 @@ import pytesseract
 from PIL import Image
 import pypdf
 from google import genai
+import sys
 
 from configuracoes import DOCUMENTOS_JA_CLASSIFICADOS, gerar_caminho_unico
 
 # ---------------------------------------------------------------------------
 # CONFIGURAÇÕES DA MÁQUINA
 # ---------------------------------------------------------------------------
-pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
+
+# Identifica a pasta onde o executável (.exe) ou o script Python está rodando
+if getattr(sys, 'frozen', False):
+    pasta_execucao = os.path.dirname(sys.executable)
+else:
+    pasta_execucao = os.path.dirname(os.path.abspath(__file__))
+
+# Tenta usar a pasta "Tesseract-OCR" local
+tesseract_local = os.path.join(pasta_execucao, "Tesseract-OCR", "tesseract.exe")
+
+if os.path.exists(tesseract_local):
+    pytesseract.pytesseract.tesseract_cmd = tesseract_local
+else:
+    # Fallback para o caminho padrão de instalação do Windows
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
 
 EXTENSOES_SUPORTADAS = ('.png', '.jpg', '.jpeg', '.pdf')
 
