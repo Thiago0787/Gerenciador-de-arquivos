@@ -697,6 +697,15 @@ def abrir_menu():
             menu.config(cursor="")
             messagebox.showinfo("Sucesso", "Todos os ficheiros voltaram a ter nomes genéricos!")
 
+    def abrir_manual():
+        caminho_manual = os.path.join(os.path.dirname(__file__), "Manual_de_Uso.pdf")
+        if os.path.exists(caminho_manual):
+            webbrowser.open(caminho_manual)
+        else:
+            messagebox.showwarning("Aviso", "O arquivo do Manual não foi encontrado na pasta.")
+
+
+
     def btn_abrir_arquivador():
         janela = tk.Toplevel(menu)
         ArquivadorLote(janela, config_atual["pasta_destino_final"]) 
@@ -722,6 +731,12 @@ def abrir_menu():
         menu, text="4. Arquivador Automático (Por RM)", width=40, height=2, 
         bg="#f39c12", fg="white", font=("Arial", 10, "bold"), command=btn_abrir_arquivador
     ).pack(pady=7)
+
+    # Botão no menu
+    tk.Button(
+        menu, text="📖 Manual (PDF)", width=40, height=1, 
+        bg="#2980b9", fg="white", font=("Arial", 9, "bold"), command=abrir_manual
+    ).pack(pady=5)
     
     tk.Button(
         menu, text="⚙️ Configurações de Pastas", width=40, height=1, 
