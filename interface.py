@@ -18,7 +18,7 @@ from configuracoes import (
 )
 
 VERSAO_ATUAL = "1.0.0"
-URL_VERSAO_GITHUB = "https://raw.githubusercontent.com/SEU_USUARIO/SEU_REPOSITORIO/main/versao.json"
+URL_VERSAO_GITHUB = "https://raw.githubusercontent.com/Thiago0787/Gerenciador-de-arquivos/main/versao.json"
 
 def verificar_atualizacoes():
     try:
