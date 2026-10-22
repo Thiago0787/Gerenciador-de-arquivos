@@ -17,7 +17,7 @@ from configuracoes import (
     gerar_caminho_unico
 )
 
-VERSAO_ATUAL = "1.0.0"
+VERSAO_ATUAL = "1.1.2"
 URL_VERSAO_GITHUB = "https://raw.githubusercontent.com/Thiago0787/Gerenciador-de-arquivos/main/versao.json"
 
 def verificar_atualizacoes():
