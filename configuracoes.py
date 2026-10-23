@@ -1,7 +1,11 @@
 import os
 import json
 
-ARQUIVO_CONFIG = "config_pastas.json"
+# Define o caminho seguro dentro do AppData do usuário
+PASTA_APPDATA = os.path.join(os.getenv('APPDATA', os.path.expanduser('~')), "GerenciadorDocumentos")
+os.makedirs(PASTA_APPDATA, exist_ok=True)
+
+ARQUIVO_CONFIG = os.path.join(PASTA_APPDATA, "config_pastas.json")
 
 CONFIG_PADRAO = {
     "pasta_principal": r"C:\Users\User\Pictures",

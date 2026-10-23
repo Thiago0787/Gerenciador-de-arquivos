@@ -7,6 +7,11 @@ import threading
 import tkinter as tk
 from tkinter import messagebox, filedialog, ttk
 from PIL import Image, ImageTk
+import sys
+import zipfile
+import tempfile
+import subprocess
+import unicodedata
 
 # Importa o motor e as configurações centralizadas[cite: 1, 2]
 import nomeador
@@ -17,8 +22,56 @@ from configuracoes import (
     gerar_caminho_unico
 )
 
-VERSAO_ATUAL = "1.0.0"
+VERSAO_ATUAL = "1.2.2"
 URL_VERSAO_GITHUB = "https://raw.githubusercontent.com/Thiago0787/Gerenciador-de-arquivos/main/versao.json"
+
+def executar_auto_atualizacao(download_url):
+    try:
+        # 1. Define onde fica a pasta atual do programa (.exe ou script)
+        if getattr(sys, 'frozen', False):
+            pasta_app = os.path.dirname(sys.executable)
+            exe_nome = os.path.basename(sys.executable)
+        else:
+            pasta_app = os.path.dirname(os.path.abspath(__file__))
+            exe_nome = "GerenciadorDocumentos.exe"
+
+        # 2. Cria pasta temporária para o download
+        pasta_temp = tempfile.mkdtemp()
+        caminho_zip = os.path.join(pasta_temp, "atualizacao.zip")
+        pasta_extraida = os.path.join(pasta_temp, "extraido")
+
+        # 3. Baixa e extrai o ZIP
+        urllib.request.urlretrieve(download_url, caminho_zip)
+        with zipfile.ZipFile(caminho_zip, 'r') as zip_ref:
+            zip_ref.extractall(pasta_extraida)
+
+        # Trata o caso do zip conter uma subpasta com os arquivos dentro
+        itens_extraidos = os.listdir(pasta_extraida)
+        if len(itens_extraidos) == 1 and os.path.isdir(os.path.join(pasta_extraida, itens_extraidos[0])):
+            pasta_origem_arquivos = os.path.join(pasta_extraida, itens_extraidos[0])
+        else:
+            pasta_origem_arquivos = pasta_extraida
+
+        # 4. Escreve o script .bat temporário
+        caminho_bat = os.path.join(pasta_temp, "atualizar.bat")
+        caminho_exe_final = os.path.join(pasta_app, exe_nome)
+
+        conteudo_bat = f"""@echo off
+timeout /t 2 /nobreak > nul
+xcopy "{pasta_origem_arquivos}\\*" "{pasta_app}\\" /E /Y /Q
+start "" "{caminho_exe_final}"
+rmdir /s /q "{pasta_temp}"
+"""
+
+        with open(caminho_bat, "w", encoding="utf-8") as f:
+            f.write(conteudo_bat)
+
+        # 5. Executa o BAT em segundo plano sem janela preta e encerra o app atual
+        subprocess.Popen(["cmd.exe", "/c", caminho_bat], creationflags=subprocess.CREATE_NO_WINDOW)
+        sys.exit(0)
+
+    except Exception as e:
+        print(f"Erro ao atualizar automaticamente: {e}")
 
 def verificar_atualizacoes():
     try:
@@ -35,10 +88,167 @@ def verificar_atualizacoes():
                     f"A versão {versao_remota} está disponível! (Versão atual: {VERSAO_ATUAL})\n\nDeseja baixar a nova versão agora?"
                 )
                 if resposta_user:
-                    webbrowser.open(url_download)
+                    # Mostra um aviso ao usuário informando que o download começou
+                    messagebox.showinfo("Atualizando", "O sistema está baixando e instalando a nova versão em segundo plano. O programa será reiniciado em instantes!")
+                    
+                    # Roda a função de auto-atualização
+                    executar_auto_atualizacao(url_download)
     except Exception:
         pass
 
+def limpar_texto(texto):
+        """Remove acentos e converte para minúsculas automaticamente."""
+        return unicodedata.normalize('NFKD', texto).encode('ASCII', 'ignore').decode('utf-8').lower()
+
+class ExploradorAlunos:
+    def __init__(self, root, pasta_destino):
+        self.root = root
+        self.pasta_destino = pasta_destino
+        self.root.title("Pesquisa de Alunos e Relatório de Pendências")
+        self.root.geometry("850x670") # Aumentei um pouco para caber os nomes longos
+        self.root.configure(bg="#f4f4f4")
+        
+        # 1. Nova lógica de documentos OBRIGATÓRIOS: ("Nome Bonito", ["opções", "de", "busca"])
+        # Se ele encontrar QUALQUER UMA das opções na lista, o documento será dado como ENTREGUE.
+        self.docs_obrigatorios = [
+            ("RG (aluno)", ["rg (aluno)", "documento (aluno)", "documento (mae e aluno)", "documento (mãe e aluno)"]),
+            ("Cert. Nasc.", ["cert. nasc", "certidao de nascimento", "certidão de nascimento", "cert. de nasc."]),
+            ("Comp. de Res.", ["comp. de res", "comp. res", "comprovante de residencia", "comprovante de residência"]),
+            ("Hist. Escolar", ["hist. escolar", "historico escolar", "histórico escolar"]),
+            ("Doc. Mãe (RG ou CNH)", ["rg (mae)", "rg (mãe)", "cnh (mae)", "cnh (mãe)", "documento (mae)", "documento (mãe)", "documento (mae e aluno)", "documento (mãe e aluno)"]),
+            ("Doc. Pai (RG ou CNH)", ["rg (pai)", "cnh (pai)", "documento (pai)"]),
+            ("Dec. de Transf.", ["dec. de transf", "dec. transf", "declaração de transferência", "declaração de transferencia", "declaracao de transferencia"]),
+            ("Termo do Uso de Imagem", ["Termo do Uso de Imagem", "Termo de Uso de Imagem", "Termo de Imagem"])
+        ]
+        
+        # 2. Mapeia os alunos entrando nas subpastas das salas
+        self.mapa_alunos = self.mapear_alunos()
+        self.lista_exibicao = sorted(list(self.mapa_alunos.keys()))
+        
+        # --- Interface ---
+        tk.Label(self.root, text="🔍 Pesquisar Prontuário (Nome ou RM)", font=("Arial", 12, "bold"), bg="#f4f4f4").pack(pady=(15, 5))
+        
+        self.var_pesquisa = tk.StringVar(self.root)
+        self.entry_pesquisa = tk.Entry(self.root, textvariable=self.var_pesquisa, font=("Arial", 12), width=50)
+        self.entry_pesquisa.pack(pady=5)
+        self.entry_pesquisa.bind("<KeyRelease>", self.filtrar_lista)
+        
+        # Frame para Lista e Detalhes
+        frame_meio = tk.Frame(self.root, bg="#f4f4f4")
+        frame_meio.pack(fill=tk.BOTH, expand=True, padx=20, pady=10)
+        
+        # Lista de alunos (Aumentei a largura para caber "SALA / ALUNO")
+        self.listbox = tk.Listbox(frame_meio, font=("Arial", 11), width=45)
+        self.listbox.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        self.listbox.bind('<<ListboxSelect>>', self.mostrar_relatorio)
+        
+        # NOVO: Barra de rolagem para a lista de alunos
+        scrollbar = tk.Scrollbar(frame_meio, orient="vertical")
+        scrollbar.config(command=self.listbox.yview)
+        scrollbar.pack(side=tk.LEFT, fill=tk.Y)
+        self.listbox.config(yscrollcommand=scrollbar.set)
+        
+        # Painel de Relatório
+        self.frame_relatorio = tk.Frame(frame_meio, bg="white", relief=tk.SOLID, bd=1)
+        self.frame_relatorio.pack(side=tk.RIGHT, fill=tk.BOTH, expand=True, padx=(15, 0))
+        
+        self.lbl_nome_aluno = tk.Label(self.frame_relatorio, text="Selecione um aluno", font=("Arial", 12, "bold"), bg="white", wraplength=380)
+        self.lbl_nome_aluno.pack(pady=10)
+        
+        self.texto_relatorio = tk.Text(self.frame_relatorio, font=("Arial", 11), bg="white", state=tk.DISABLED, wrap=tk.WORD)
+        self.texto_relatorio.pack(fill=tk.BOTH, expand=True, padx=10, pady=5)
+        
+        self.btn_abrir_explorer = tk.Button(self.frame_relatorio, text="📂 Abrir Pasta no Windows", bg="#3498db", fg="white", font=("Arial", 10, "bold"), command=self.abrir_no_explorer, state=tk.DISABLED)
+        self.btn_abrir_explorer.pack(pady=10)
+        
+        # Botão de Voltar
+        tk.Button(self.root, text="🔙 Voltar ao Menu", font=("Arial", 10, "bold"), bg="#e74c3c", fg="white", command=self.root.destroy).pack(pady=10)
+        
+        self.pasta_selecionada = None
+        self.atualizar_listbox(self.lista_exibicao)
+
+    def mapear_alunos(self):
+        """Entra na pasta Destino Final, lê as salas e depois lê os alunos dentro de cada sala."""
+        mapa = {}
+        if os.path.exists(self.pasta_destino):
+            # 1. Percorre as pastas das salas (ex: "1º ANO", "INFANTIL I")
+            for sala in os.listdir(self.pasta_destino):
+                caminho_sala = os.path.join(self.pasta_destino, sala)
+                
+                # Garante que é uma pasta e ignora lixeiras
+                if os.path.isdir(caminho_sala) and sala not in ["Lixeira", "Backups"] and not sala.startswith('.'):
+                    
+                    # 2. Percorre as pastas dos alunos dentro daquela sala (ex: "0000 - fulano")
+                    for aluno in os.listdir(caminho_sala):
+                        caminho_aluno = os.path.join(caminho_sala, aluno)
+                        
+                        if os.path.isdir(caminho_aluno):
+                            # Cria o nome de exibição bonito. Ex: "2º ANO / 0000 - Thiago"
+                            nome_exibicao = f"{sala} / {aluno}"
+                            # Salva no dicionário qual é o caminho real no Windows daquele aluno
+                            mapa[nome_exibicao] = caminho_aluno
+        return mapa
+
+    def atualizar_listbox(self, lista):
+        self.listbox.delete(0, tk.END)
+        for item in lista:
+            self.listbox.insert(tk.END, item)
+
+    def filtrar_lista(self, event=None):
+        termo = self.var_pesquisa.get().lower()
+        filtrados = [p for p in self.lista_exibicao if termo in p.lower()]
+        self.atualizar_listbox(filtrados)
+
+    def mostrar_relatorio(self, event):
+        selecao = self.listbox.curselection()
+        if not selecao: return
+        
+        # Pega o nome que foi clicado (ex: "2º ANO / 0000 - Thiago")
+        nome_exibicao = self.listbox.get(selecao[0])
+        
+        # Busca no dicionário o caminho real da pasta
+        self.pasta_selecionada = self.mapa_alunos[nome_exibicao]
+        self.lbl_nome_aluno.config(text=nome_exibicao)
+        self.btn_abrir_explorer.config(state=tk.NORMAL)
+        
+        # Mapeia os arquivos da pasta já removendo acentos e maiúsculas
+        arquivos_na_pasta = [limpar_texto(f) for f in os.listdir(self.pasta_selecionada) if os.path.isfile(os.path.join(self.pasta_selecionada, f))]
+        
+        docs_encontrados = []
+        docs_faltantes = []
+        
+        # Cruzamento flexível dos documentos
+        for nome_doc, opcoes_busca in self.docs_obrigatorios:
+            encontrado = False
+            for opcao in opcoes_busca:
+                opcao_limpa = limpar_texto(opcao)
+                for arq in arquivos_na_pasta:
+                    if opcao_limpa in arq:
+                        encontrado = True
+                        break
+                if encontrado:
+                    break
+            
+            if encontrado:
+                docs_encontrados.append(nome_doc)
+            else:
+                docs_faltantes.append(nome_doc)
+                
+        # Monta o relatório visual na caixa de texto
+        relatorio = "✅ DOCUMENTOS ENTREGUES:\n"
+        relatorio += "\n".join([f" - {d}" for d in docs_encontrados]) if docs_encontrados else " (Nenhum)"
+        relatorio += "\n\n❌ DOCUMENTOS PENDENTES (FALTAM):\n"
+        relatorio += "\n".join([f" - {d}" for d in docs_faltantes]) if docs_faltantes else " (Tudo completo!)"
+        
+        self.texto_relatorio.config(state=tk.NORMAL)
+        self.texto_relatorio.delete("1.0", tk.END)
+        self.texto_relatorio.insert(tk.END, relatorio)
+        self.texto_relatorio.config(state=tk.DISABLED)
+
+    def abrir_no_explorer(self):
+        if self.pasta_selecionada and os.path.exists(self.pasta_selecionada):
+            # Específico para Windows
+            os.startfile(self.pasta_selecionada)
 
 class AppVerificador:
     def __init__(self, root, pasta_raiz):
@@ -110,6 +320,9 @@ class AppVerificador:
 
         self.btn_deletar = tk.Button(frame_controles, text="Lixeira", width=10, bg="#ff4d4d", fg="white", font=("Arial", 10, "bold"), command=self.deletar)
         self.btn_deletar.grid(row=0, column=4, padx=10, ipady=5)
+
+        self.btn_fechar = tk.Button(frame_controles, text="🔙 Voltar ao Menu", font=("Arial", 10, "bold"), bg="#95a5a6", fg="white", command=lambda: self.fechar_janela())
+        self.btn_fechar.grid(row=0, column=5, padx=10, ipady=5)
 
         self.root.protocol("WM_DELETE_WINDOW", self.fechar_janela)
         self.carregar_arquivos()
@@ -451,6 +664,8 @@ class ArquivadorLote:
         self.btn_arquivar = tk.Button(self.root, text="Mover e Renomear Tudo", command=self.arquivar, font=("Arial", 12, "bold"), bg="#2ecc71", fg="white", width=25)
         self.btn_arquivar.pack(pady=20)
 
+        tk.Button(self.root, text="🔙 Voltar ao Menu", font=("Arial", 10, "bold"), bg="#e74c3c", fg="white", command=lambda: getattr(self, 'fechar_janela', self.root.destroy)()).pack(pady=5)
+
     def mapear_pastas(self):
         """Mapeia as pastas criando um dicionário ultrarrápido (RM -> Caminho)[cite: 2]."""
         self.dicionario_rms = {}
@@ -539,11 +754,10 @@ class ArquivadorLote:
 def abrir_menu():
     menu = tk.Tk()
     menu.title("Sistema Híbrido de Triagem")
-    menu.geometry("450x530")
+    menu.geometry("480x590")
     menu.configure(bg="#f4f4f4")
 
     verificar_atualizacoes()
-    
     config_atual = carregar_configuracoes()
 
     tk.Label(menu, text="Gerenciador de Documentos", font=("Arial", 16, "bold"), bg="#f4f4f4", fg="#2c3e50").pack(pady=20)
@@ -711,37 +925,40 @@ def abrir_menu():
         ArquivadorLote(janela, config_atual["pasta_destino_final"]) 
 
     # BOTÕES DO MENU
-    btn_nomeador = tk.Button(
-        menu, text="1. Iniciar Nomeador Automático (IA)", width=40, height=2, 
-        bg="#3498db", fg="white", font=("Arial", 10, "bold"), command=btn_rodar_nomeador
-    )
-    btn_nomeador.pack(pady=7)
     
-    tk.Button(
-        menu, text="2. Abrir Verificador de Imagens", width=40, height=2, 
-        bg="#2ecc71", fg="white", font=("Arial", 10, "bold"), command=btn_abrir_verificador
-    ).pack(pady=7)
-    
-    tk.Button(
-        menu, text="3. Repor Nomes Genéricos", width=40, height=2, 
-        bg="#e74c3c", fg="white", font=("Arial", 10, "bold"), command=btn_resetar
-    ).pack(pady=7)
-    
-    tk.Button(
-        menu, text="4. Arquivador Automático (Por RM)", width=40, height=2, 
-        bg="#f39c12", fg="white", font=("Arial", 10, "bold"), command=btn_abrir_arquivador
-    ).pack(pady=7)
+    def abrir_tela(classe_tela, *args):
+        menu.withdraw() # Esconde o menu principal
+        janela = tk.Toplevel(menu)
+        
+        # Intercepta o botão 'X' da janela para restaurar o menu
+        def ao_fechar():
+            janela.destroy()
+            menu.deiconify() # Traz o menu de volta
+            
+        janela.protocol("WM_DELETE_WINDOW", ao_fechar)
+        app = classe_tela(janela, *args)
+        
+        # Injeta a função de fechar na classe para o botão "Voltar" poder usar
+        app.fechar_janela = ao_fechar 
 
-    # Botão no menu
-    tk.Button(
-        menu, text="📖 Manual (PDF)", width=40, height=1, 
-        bg="#2980b9", fg="white", font=("Arial", 9, "bold"), command=abrir_manual
-    ).pack(pady=5)
+    # BOTÕES DO MENU
+    tk.Button(menu, text="1. Iniciar Nomeador Automático (IA)", width=40, height=2, bg="#3498db", fg="white", font=("Arial", 10, "bold"), command=btn_rodar_nomeador).pack(pady=6)
     
-    tk.Button(
-        menu, text="⚙️ Configurações de Pastas", width=40, height=1, 
-        bg="#7f8c8d", fg="white", font=("Arial", 9, "bold"), command=btn_abrir_configuracoes
-    ).pack(pady=15)
+    tk.Button(menu, text="2. Abrir Verificador de Imagens", width=40, height=2, bg="#2ecc71", fg="white", font=("Arial", 10, "bold"), command=lambda: abrir_tela(AppVerificador, config_atual["pasta_principal"])).pack(pady=6)
+    
+    tk.Button(menu, text="3. Repor Nomes Genéricos", width=40, height=2, bg="#e74c3c", fg="white", font=("Arial", 10, "bold"), command=btn_resetar).pack(pady=6)
+    
+    tk.Button(menu, text="4. Arquivador Automático (Por RM)", width=40, height=2, bg="#f39c12", fg="white", font=("Arial", 10, "bold"), command=lambda: abrir_tela(ArquivadorLote, config_atual["pasta_destino_final"])).pack(pady=6)
+    
+    # NOVO BOTÃO: Pesquisa e Relatório
+    tk.Button(menu, text="5. Pesquisar Aluno / Relatório", width=40, height=2, bg="#8e44ad", fg="white", font=("Arial", 10, "bold"), command=lambda: abrir_tela(ExploradorAlunos, config_atual["pasta_destino_final"])).pack(pady=6)
+
+    tk.Button(menu, text="📖 Manual (PDF)", width=40, height=1, bg="#2980b9", fg="white", font=("Arial", 9, "bold"), command=abrir_manual).pack(pady=5)
+    
+    tk.Button(menu, text="⚙️ Configurações de Pastas", width=40, height=1, bg="#7f8c8d", fg="white", font=("Arial", 9, "bold"), command=btn_abrir_configuracoes).pack(pady=10)
+
+    # NOVO: Exibição da versão atual no rodapé do menu
+    tk.Label(menu, text=f"Versão {VERSAO_ATUAL}", font=("Arial", 8), bg="#f4f4f4", fg="#7f8c8d").pack(side=tk.BOTTOM, pady=5)
 
     menu.mainloop()
 
