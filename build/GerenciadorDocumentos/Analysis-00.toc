@@ -1740,9 +1740,6 @@
   ('_distutils_hack.override',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\_distutils_hack\\override.py',
    'PYMODULE'),
-  ('_py_abc',
-   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_py_abc.py',
-   'PYMODULE'),
   ('stringprep',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\stringprep.py',
    'PYMODULE'),
@@ -1751,6 +1748,9 @@
    'PYMODULE'),
   ('tracemalloc',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\tracemalloc.py',
+   'PYMODULE'),
+  ('_py_abc',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_py_abc.py',
    'PYMODULE'),
   ('json',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\json\\__init__.py',
@@ -5182,13 +5182,13 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libstdc++-6.dll',
    'BINARY'),
-  ('libtesseract-5.dll',
-   'C:\\Users\\User\\Documents\\Gerenciador de '
-   'Arquivos\\Tesseract-OCR\\libtesseract-5.dll',
-   'BINARY'),
   ('libgcc_s_seh-1.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libgcc_s_seh-1.dll',
+   'BINARY'),
+  ('libtesseract-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtesseract-5.dll',
    'BINARY'),
   ('libleptonica-6.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
@@ -5202,10 +5202,13 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libicuin78.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('liblzma-5.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\liblzma-5.dll',
    'BINARY'),
+=======
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libiconv-2.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libiconv-2.dll',
@@ -5218,6 +5221,7 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libzstd.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('liblz4.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\liblz4.dll',
@@ -5230,33 +5234,72 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libb2-1.dll',
    'BINARY'),
+=======
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('zlib1.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\zlib1.dll',
    'BINARY'),
+<<<<<<< HEAD
+=======
+  ('libbz2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libbz2-1.dll',
+   'BINARY'),
+  ('libexpat-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libexpat-1.dll',
+   'BINARY'),
+  ('liblzma-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblzma-5.dll',
+   'BINARY'),
+  ('libb2-1.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libb2-1.dll',
+   'BINARY'),
+  ('liblz4.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\liblz4.dll',
+   'BINARY'),
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libbrotlicommon.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libbrotlicommon.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('libfreetype-6.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libfreetype-6.dll',
+=======
+  ('libpng16-16.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpng16-16.dll',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'BINARY'),
   ('libfontconfig-1.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libfontconfig-1.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('libpng16-16.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpng16-16.dll',
    'BINARY'),
   ('libpixman-1-0.dll',
+=======
+  ('libfreetype-6.dll',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpixman-1-0.dll',
    'BINARY'),
-  ('libpsl-5.dll',
+  ('libpixman-1-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
+<<<<<<< HEAD
    'Arquivos\\Tesseract-OCR\\libpsl-5.dll',
+=======
+   'Arquivos\\Tesseract-OCR\\libpixman-1-0.dll',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'BINARY'),
   ('libidn2-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
@@ -5266,6 +5309,13 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libssh2-1.dll',
    'BINARY'),
+<<<<<<< HEAD
+=======
+  ('libpsl-5.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpsl-5.dll',
+   'BINARY'),
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libbrotlidec.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libbrotlidec.dll',
@@ -5282,6 +5332,7 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libwinpthread-1.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('libglib-2.0-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libglib-2.0-0.dll',
@@ -5290,10 +5341,23 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libgobject-2.0-0.dll',
    'BINARY'),
+=======
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libgmodule-2.0-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libgmodule-2.0-0.dll',
    'BINARY'),
+<<<<<<< HEAD
+=======
+  ('libgobject-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libgobject-2.0-0.dll',
+   'BINARY'),
+  ('libglib-2.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libglib-2.0-0.dll',
+   'BINARY'),
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libpcre2-8-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpcre2-8-0.dll',
@@ -5314,14 +5378,28 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libunistring-5.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('libtiff-6.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libtiff-6.dll',
    'BINARY'),
+=======
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libwebp-7.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libwebp-7.dll',
    'BINARY'),
+<<<<<<< HEAD
+=======
+  ('libwebpmux-3.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libwebpmux-3.dll',
+   'BINARY'),
+  ('libtiff-6.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libtiff-6.dll',
+   'BINARY'),
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libopenjp2-7.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libopenjp2-7.dll',
@@ -5330,13 +5408,17 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libjpeg-8.dll',
    'BINARY'),
-  ('libwebpmux-3.dll',
+  ('libjpeg-8.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
-   'Arquivos\\Tesseract-OCR\\libwebpmux-3.dll',
+   'Arquivos\\Tesseract-OCR\\libjpeg-8.dll',
    'BINARY'),
   ('libgif-7.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
+<<<<<<< HEAD
    'Arquivos\\Tesseract-OCR\\libgif-7.dll',
+=======
+   'Arquivos\\Tesseract-OCR\\libthai-0.dll',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'BINARY'),
   ('libfribidi-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
@@ -5354,10 +5436,15 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libcairo-2.dll',
    'BINARY'),
+  ('libpangowin32-1.0-0.dll',
+   'C:\\Users\\User\\Documents\\Gerenciador de '
+   'Arquivos\\Tesseract-OCR\\libpangowin32-1.0-0.dll',
+   'BINARY'),
   ('libpango-1.0-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpango-1.0-0.dll',
    'BINARY'),
+<<<<<<< HEAD
   ('libpangoft2-1.0-0.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpangoft2-1.0-0.dll',
@@ -5366,6 +5453,8 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libpangowin32-1.0-0.dll',
    'BINARY'),
+=======
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('libarchive-13.dll',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\libarchive-13.dll',
@@ -5668,17 +5757,20 @@
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\Tesseract-OCR\\wordlist2dawg.1.html',
    'DATA'),
-  ('certifi\\py.typed',
-   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\certifi\\py.typed',
-   'DATA'),
   ('certifi\\cacert.pem',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\certifi\\cacert.pem',
+   'DATA'),
+  ('certifi\\py.typed',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\certifi\\py.typed',
    'DATA'),
   ('cryptography-50.0.1.dist-info\\METADATA',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\METADATA',
    'DATA'),
-  ('cryptography-50.0.1.dist-info\\licenses\\LICENSE.APACHE',
-   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\licenses\\LICENSE.APACHE',
+  ('cryptography-50.0.1.dist-info\\licenses\\LICENSE.BSD',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\licenses\\LICENSE.BSD',
+   'DATA'),
+  ('cryptography-50.0.1.dist-info\\WHEEL',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\WHEEL',
    'DATA'),
   ('cryptography-50.0.1.dist-info\\INSTALLER',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\INSTALLER',
@@ -5692,25 +5784,51 @@
   ('cryptography-50.0.1.dist-info\\sboms\\cryptography-rust.cyclonedx.json',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\sboms\\cryptography-rust.cyclonedx.json',
    'DATA'),
+  ('cryptography-50.0.1.dist-info\\sboms\\sbom.json',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\sboms\\sbom.json',
+   'DATA'),
+  ('cryptography-50.0.1.dist-info\\licenses\\LICENSE',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\licenses\\LICENSE',
+   'DATA'),
+  ('cryptography-50.0.1.dist-info\\licenses\\LICENSE.APACHE',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\licenses\\LICENSE.APACHE',
+   'DATA'),
   ('cryptography-50.0.1.dist-info\\RECORD',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\RECORD',
    'DATA'),
+<<<<<<< HEAD
   ('cryptography-50.0.1.dist-info\\licenses\\LICENSE.BSD',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\licenses\\LICENSE.BSD',
    'DATA'),
   ('cryptography-50.0.1.dist-info\\WHEEL',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\WHEEL',
+=======
+  ('cryptography-50.0.1.dist-info\\INSTALLER',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\cryptography-50.0.1.dist-info\\INSTALLER',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'DATA'),
   ('setuptools\\_vendor\\jaraco\\text\\Lorem ipsum.txt',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\setuptools\\_vendor\\jaraco\\text\\Lorem '
    'ipsum.txt',
    'DATA'),
+<<<<<<< HEAD
   ('websockets-16.1.1.dist-info\\top_level.txt',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\top_level.txt',
+=======
+  ('websockets-16.1.1.dist-info\\RECORD',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\RECORD',
+   'DATA'),
+  ('websockets-16.1.1.dist-info\\entry_points.txt',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\entry_points.txt',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\METADATA',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\METADATA',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'DATA'),
   ('websockets-16.1.1.dist-info\\licenses\\LICENSE',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\licenses\\LICENSE',
    'DATA'),
+<<<<<<< HEAD
   ('pydantic-2.13.5.dist-info\\WHEEL',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\WHEEL',
    'DATA'),
@@ -5723,28 +5841,50 @@
   ('websockets-16.1.1.dist-info\\entry_points.txt',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\entry_points.txt',
    'DATA'),
+=======
+  ('pydantic-2.13.5.dist-info\\RECORD',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\RECORD',
+   'DATA'),
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
   ('pydantic-2.13.5.dist-info\\licenses\\LICENSE',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\licenses\\LICENSE',
    'DATA'),
   ('websockets-16.1.1.dist-info\\WHEEL',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\WHEEL',
    'DATA'),
+<<<<<<< HEAD
   ('websockets-16.1.1.dist-info\\RECORD',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\RECORD',
    'DATA'),
   ('websockets-16.1.1.dist-info\\INSTALLER',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\INSTALLER',
+=======
+  ('websockets-16.1.1.dist-info\\METADATA',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\METADATA',
+   'DATA'),
+  ('pydantic-2.13.5.dist-info\\WHEEL',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\WHEEL',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'DATA'),
   ('pydantic-2.13.5.dist-info\\INSTALLER',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\pydantic-2.13.5.dist-info\\INSTALLER',
    'DATA'),
+<<<<<<< HEAD
   ('websockets-16.1.1.dist-info\\METADATA',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\METADATA',
+=======
+  ('websockets-16.1.1.dist-info\\INSTALLER',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\INSTALLER',
+   'DATA'),
+  ('websockets-16.1.1.dist-info\\top_level.txt',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\site-packages\\websockets-16.1.1.dist-info\\top_level.txt',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'DATA'),
   ('base_library.zip',
    'C:\\Users\\User\\Documents\\Gerenciador de '
    'Arquivos\\build\\GerenciadorDocumentos\\base_library.zip',
    'DATA')],
+<<<<<<< HEAD
  [('operator',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\operator.py',
    'PYMODULE'),
@@ -5791,6 +5931,9 @@
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\abc.py',
    'PYMODULE'),
   ('encodings.zlib_codec',
+=======
+ [('encodings.zlib_codec',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\encodings\\zlib_codec.py',
    'PYMODULE'),
   ('encodings.uu_codec',
@@ -6159,6 +6302,7 @@
   ('encodings',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\encodings\\__init__.py',
    'PYMODULE'),
+<<<<<<< HEAD
   ('sre_constants',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_constants.py',
    'PYMODULE'),
@@ -6173,19 +6317,44 @@
    'PYMODULE'),
   ('types',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\types.py',
+=======
+  ('functools',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\functools.py',
+   'PYMODULE'),
+  ('collections',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\collections\\__init__.py',
+   'PYMODULE'),
+  ('reprlib',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\reprlib.py',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'PYMODULE'),
   ('heapq',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\heapq.py',
    'PYMODULE'),
+<<<<<<< HEAD
   ('traceback',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\traceback.py',
    'PYMODULE'),
   ('posixpath',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\posixpath.py',
+=======
+  ('sre_constants',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_constants.py',
+   'PYMODULE'),
+  ('codecs',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\codecs.py',
+   'PYMODULE'),
+  ('warnings',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\warnings.py',
+   'PYMODULE'),
+  ('stat',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\stat.py',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'PYMODULE'),
   ('genericpath',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\genericpath.py',
    'PYMODULE'),
+<<<<<<< HEAD
   ('linecache',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\linecache.py',
    'PYMODULE'),
@@ -6203,6 +6372,70 @@
    'PYMODULE'),
   ('collections',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\collections\\__init__.py',
+=======
+  ('io',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\io.py',
+   'PYMODULE'),
+  ('keyword',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\keyword.py',
+   'PYMODULE'),
+  ('locale',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\locale.py',
+   'PYMODULE'),
+  ('ntpath',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\ntpath.py',
+   'PYMODULE'),
+  ('enum',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\enum.py',
+   'PYMODULE'),
+  ('_collections_abc',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_collections_abc.py',
+   'PYMODULE'),
+  ('weakref',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\weakref.py',
+   'PYMODULE'),
+  ('traceback',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\traceback.py',
+   'PYMODULE'),
+  ('sre_parse',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_parse.py',
+   'PYMODULE'),
+  ('copyreg',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\copyreg.py',
+   'PYMODULE'),
+  ('abc',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\abc.py',
+   'PYMODULE'),
+  ('operator',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\operator.py',
+   'PYMODULE'),
+  ('re._parser',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_parser.py',
+   'PYMODULE'),
+  ('re._constants',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_constants.py',
+   'PYMODULE'),
+  ('re._compiler',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_compiler.py',
+   'PYMODULE'),
+  ('re._casefix',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\_casefix.py',
+   'PYMODULE'),
+  ('posixpath',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\posixpath.py',
+   'PYMODULE'),
+  ('types',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\types.py',
+   'PYMODULE'),
+  ('sre_compile',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\sre_compile.py',
+   'PYMODULE'),
+  ('linecache',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\linecache.py',
+   'PYMODULE'),
+  ('_weakrefset',
+   'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\_weakrefset.py',
+>>>>>>> 3b1293d53e23f98cc8b4dd112a65f92c8992b2f8
    'PYMODULE'),
   ('re',
    'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python314\\Lib\\re\\__init__.py',

@@ -22,7 +22,9 @@ from configuracoes import (
     gerar_caminho_unico
 )
 
+
 VERSAO_ATUAL = "1.2.2"
+
 URL_VERSAO_GITHUB = "https://raw.githubusercontent.com/Thiago0787/Gerenciador-de-arquivos/main/versao.json"
 
 def executar_auto_atualizacao(download_url):
@@ -918,8 +920,6 @@ def abrir_menu():
         else:
             messagebox.showwarning("Aviso", "O arquivo do Manual não foi encontrado na pasta.")
 
-
-
     def btn_abrir_arquivador():
         janela = tk.Toplevel(menu)
         ArquivadorLote(janela, config_atual["pasta_destino_final"]) 
@@ -942,7 +942,20 @@ def abrir_menu():
         app.fechar_janela = ao_fechar 
 
     # BOTÕES DO MENU
-    tk.Button(menu, text="1. Iniciar Nomeador Automático (IA)", width=40, height=2, bg="#3498db", fg="white", font=("Arial", 10, "bold"), command=btn_rodar_nomeador).pack(pady=6)
+    # tk.Button(menu, text="1. Iniciar Nomeador Automático (IA)", width=40, height=2, bg="#3498db", fg="white", font=("Arial", 10, "bold"), command=btn_rodar_nomeador).pack(pady=6)
+
+    # BOTÕES DO MENU
+    btn_nomeador = tk.Button(
+        menu, 
+        text="1. Iniciar Nomeador Automático (IA)", 
+        width=40, 
+        height=2, 
+        bg="#3498db", 
+        fg="white", 
+        font=("Arial", 10, "bold"), 
+        command=btn_rodar_nomeador
+    )
+    btn_nomeador.pack(pady=6)
     
     tk.Button(menu, text="2. Abrir Verificador de Imagens", width=40, height=2, bg="#2ecc71", fg="white", font=("Arial", 10, "bold"), command=lambda: abrir_tela(AppVerificador, config_atual["pasta_principal"])).pack(pady=6)
     
